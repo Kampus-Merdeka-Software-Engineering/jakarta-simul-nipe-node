@@ -19,6 +19,10 @@ app.get('/palembang', (req, res) => {
     res.send({city: 'palembang'});
 });
 
+app.get('/hello', (req, res) => {
+    res.send({message: 'hello'});
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
