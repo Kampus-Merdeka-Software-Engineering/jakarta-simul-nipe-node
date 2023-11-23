@@ -13,7 +13,11 @@ app.get('/kuliah', (req, res) => {
 
 app.get('/jakarta', (req, res) => {
     res.send({section: 'Jakarta'});
-  });
+});
+
+app.get('/palembang', (req, res) => {
+    res.send({city: 'palembang'});
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
