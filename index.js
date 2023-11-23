@@ -11,6 +11,10 @@ app.get('/kuliah', (req, res) => {
   res.send({fakultas: 'Informatika'});
 });
 
+app.get('/jakarta', (req, res) => {
+    res.send({section: 'Jakarta'});
+  });
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
